@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "no_nether_portal_overlay",
+  "version": "${version}",
+  "name": "No Nether Portal Overlay",
+  "description": "This mod removes the annoying nether portal overlay!",
+  "authors": [
+    "SmushyTaco"
+  ],
+  "contact": {
+    "homepage": "https://www.smushytaco.com/",
+    "issues": "https://www.curseforge.com/minecraft/mc-mods/no-nether-portal-overlay/issues/",
+    "sources": "https://github.com/realSmushyTaco/No-Nether-Portal-Overlay/"
+  },
+  "license": "GNU Lesser General Public License version 3 (LGPLv3)",
+  "icon": "assets/no_nether_portal_overlay/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.smushytaco.no_nether_portal_overlay.NoNetherPortalOverlay"
+      }
+    ],
+    "modmenu": [
+      "com.smushytaco.no_nether_portal_overlay.configuration_support.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "no_nether_portal_overlay.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "fabric-language-kotlin": ">=1.6.0+kotlin.1.5.0",
+    "minecraft": "1.16.x",
+    "cloth-config2": ">=4.11.24"
+  },
+  "suggests": {
+    "modmenu": ">=1.14.13+build.22"
+  }
+}
