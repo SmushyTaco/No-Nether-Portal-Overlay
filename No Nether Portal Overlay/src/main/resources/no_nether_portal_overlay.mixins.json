@@ -1,7 +1,7 @@
 {
   "required": true,
   "package": "com.smushytaco.no_nether_portal_overlay.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_16",
   "client": [
     "NoNetherPortalOverlayMixin"
   ],
