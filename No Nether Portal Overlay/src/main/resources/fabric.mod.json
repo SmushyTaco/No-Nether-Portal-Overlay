@@ -22,12 +22,6 @@
         "value": "com.smushytaco.no_nether_portal_overlay.NoNetherPortalOverlay"
       }
     ],
-    "preLaunch": [
-      {
-        "adapter": "kotlin",
-        "value": "com.smushytaco.no_nether_portal_overlay.NoNetherPortalOverlayPreLaunch"
-      }
-    ],
     "modmenu": [
       "com.smushytaco.no_nether_portal_overlay.configuration_support.ModMenuIntegration"
     ]
@@ -41,8 +35,7 @@
     "fabric-language-kotlin": ">=${fabric_language_kotlin}",
     "minecraft": ">=${minecraft}",
     "java": ">=${java}",
-    "cloth-config2": ">=${clothconfig}",
-    "com_github_llamalad7_mixinextras": ">=${mixinextras}"
+    "cloth-config2": ">=${clothconfig}"
   },
   "suggests": {
     "modmenu": ">=${modmenu}"
