@@ -21,7 +21,8 @@
         "adapter": "kotlin",
         "value": "com.smushytaco.no_nether_portal_overlay.NoNetherPortalOverlay"
       }
-    ]  },
+    ]
+  },
   "mixins": [
     "no_nether_portal_overlay.mixins.json"
   ],
