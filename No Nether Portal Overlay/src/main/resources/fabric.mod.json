@@ -12,7 +12,7 @@
     "issues": "https://www.curseforge.com/minecraft/mc-mods/no-nether-portal-overlay/issues/",
     "sources": "https://github.com/SmushyTaco/No-Nether-Portal-Overlay/"
   },
-  "license": "GNU Lesser General Public License version 3 (LGPLv3)",
+  "license": "Apache-2.0",
   "icon": "assets/no_nether_portal_overlay/icon.png",
   "environment": "client",
   "entrypoints": {
