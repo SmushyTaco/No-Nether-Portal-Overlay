@@ -25,11 +25,10 @@ repositories {
 }
 dependencies {
     minecraft(libs.minecraft)
-    mappings(loom.officialMojangMappings())
-    modImplementation(libs.loader)
-    modImplementation(libs.fabric.api)
-    modImplementation(libs.fabric.language.kotlin)
-    modImplementation(libs.owo)
+    implementation(libs.loader)
+    implementation(libs.fabric.api)
+    implementation(libs.fabric.language.kotlin)
+    implementation(libs.owo)
     ksp(libs.kspOwoConfig)
 }
 java {
@@ -104,7 +103,7 @@ tasks {
         group = "publishing"
         disableVersionDetection()
         apiToken = env.fetch("CURSEFORGE_TOKEN", "")
-        val file = upload(486338, remapJar)
+        val file = upload(486338, jar)
         file.displayName = "[${libs.versions.minecraft.get()}] No Nether Portal Overlay"
         file.addEnvironment("Client")
         file.changelog = ""
@@ -116,7 +115,7 @@ tasks {
 modrinth {
     token = env.fetch("MODRINTH_TOKEN", "")
     projectId = "no-nether-portal-overlay"
-    uploadFile.set(tasks.remapJar)
+    uploadFile.set(tasks.jar)
     gameVersions.add(libs.versions.minecraft)
     versionName = libs.versions.minecraft.map { "[$it] No Nether Portal Overlay" }
     dependencies {
